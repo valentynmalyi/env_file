@@ -1,8 +1,12 @@
 from pathlib import Path
 
+import environ
+
+env = environ.Env()
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = ")qi07)exs)6408$)lh2o!3-$=n2f*4m^3%r0v!wm76k48qx(8)"
+SECRET_KEY = env.str("DJANGO_SECRET_KEY")
 
 DEBUG = True
 
