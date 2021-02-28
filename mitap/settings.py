@@ -66,3 +66,5 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = "/static/"
+
+SHOW_DATA = env.json("SHOW_DATA")
